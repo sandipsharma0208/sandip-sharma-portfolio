@@ -65,7 +65,7 @@ export function HeroSection() {
               <a
                 className="button-secondary"
                 href="/Sandip_Sharma_Resume.pdf"
-                download
+                download="Sandip_Sharma_Resume.pdf"
               >
                 Download resume <ArrowDownToLine size={15} aria-hidden="true" />
               </a>
