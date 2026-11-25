@@ -912,6 +912,8 @@ a {
 }
 .project-preview--martial-arts { display: grid; place-items: center; padding: 0.35rem; background: #fdfaf5; }
 .project-preview--martial-arts img { object-fit: contain; object-position: center; }
+.project-preview--payora { display: grid; place-items: center; padding: 0.35rem; background: #fde8f0; }
+.project-preview--payora img { object-fit: contain; object-position: center; }
 .preview-browser {
   position: relative;
   height: 100%;

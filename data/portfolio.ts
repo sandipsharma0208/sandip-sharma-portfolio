@@ -137,6 +137,27 @@ export const projects = [
     live: null,
     github: "https://github.com/sandipsharma0208/fixora",
   },
+  {
+    number: "05",
+    title: "Payora",
+    category: "Mobile application",
+    description:
+      "A multi-currency wallet for sending money, exchanging 13 currencies at the mid-market rate, and paying abroad. Includes Face ID, QR payments, and a NestJS double-entry ledger.",
+    preview: "payora",
+    tags: [
+      "React Native",
+      "Expo SDK 51",
+      "TypeScript",
+      "Expo Router",
+      "Reanimated",
+      "Face ID",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+    ],
+    live: null,
+    github: "https://github.com/sandipsharma0208/payora",
+  },
 ] as const;
 
 export const services = [

@@ -291,6 +291,17 @@ function ProjectPreview({ variant }: Readonly<{ variant: string }>) {
         />
       </div>
     );
+  if (variant === "payora")
+    return (
+      <div className="project-preview project-preview--payora">
+        <Image
+          src="/images/payora.jpg"
+          alt="Screenshot of the Payora wallet home screen"
+          fill
+          sizes="(max-width: 700px) 100vw, 560px"
+        />
+      </div>
+    );
   if (variant === "fixora")
     return (
       <div
@@ -376,28 +387,30 @@ export function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-                <div className="project-links">
-                  {project.live && (
-                    <a
-                      className="project-link"
-                      href={project.live}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live project <ArrowUpRight size={14} aria-hidden="true" />
-                    </a>
-                  )}
-                  {project.github && (
-                    <a
-                      className="project-link"
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Source code <GitHubMark />
-                    </a>
-                  )}
-                </div>
+                {(project.live || project.github) && (
+                  <div className="project-links">
+                    {project.live && (
+                      <a
+                        className="project-link"
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live project <ArrowUpRight size={14} aria-hidden="true" />
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        className="project-link"
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Source code <GitHubMark />
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </SectionReveal>
           ))}
